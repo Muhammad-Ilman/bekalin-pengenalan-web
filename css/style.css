@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
   font-family: "Poppins", Arial, Sans-Serif;
-  color: rgb(34, 34, 59);
   padding: 0;
   margin: 0;
 }
-
+body {
+  color: rgb(16, 0, 43);
+}
 /* HEADER */
 .header {
   display: flex;
   padding: 15px;
-  background-color: rgb(34, 34, 59);
+  justify-content: space-around;
+  background-color: rgb(16, 0, 43);
 }
 .header-logo,
 .header-title {
@@ -23,6 +25,7 @@
 .header-title a{
   color: #fff;
   text-decoration: none;
+  font-size: 20px;
   font-weight: 900;
 }
 
@@ -42,17 +45,71 @@
 .nav-item a {
   font-weight: 400;
   text-decoration: none;
-  color: rgb(34, 34, 59);
+  color: rgb(16, 0, 43);
 }
 .nav-item a:hover {
-  color: rgba(34, 34, 59, 0.8);
+  color: rgba(16, 0, 43, 0.8);
 }
 
 /* KONTEN */
+.konten {
+  width: 80%;
+  margin: auto;
+}
 .konten h1 {
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 15px;
   font-weight: 800;
+  padding-bottom: 10px;
+  margin-top: 26px;
+}
+.konten h2 > span{
+  color: rgb(129, 135, 220);
+}
+.konten p {
+  margin-top: 20px;
+}
+
+/* TABLE */
+.container-table {
+  overflow: scroll;
+  padding: 10px;
+}
+.table {
+  overflow: hidden;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  border-radius: 10px;
+  width: 79vw;
+  border-spacing: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+.table img {
+  width: 100px;
+  border-radius: 10px;
+}
+.table thead tr {
+  background-color: rgba(129, 135, 220);
+  color: #ffffff;
+  text-align: center;
+  transition: .3s ease;
+}
+.table thead tr:hover {
+  background-color: rgba(117, 123, 200, 1);
+}
+.table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  transition: .3s ease;
+}
+.table tbody tr:hover {
+  background-color: rgba(223, 231, 253, 0.5);
+}
+.table tbody tr:nth-of-type(even) {
+  background-color: rgb(223, 231, 253);
+}
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid rgb(129, 135, 220);
 }
