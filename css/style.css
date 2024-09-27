@@ -113,3 +113,71 @@ body {
 .table tbody tr:last-of-type {
   border-bottom: 2px solid rgb(129, 135, 220);
 }
+
+/* FORM */
+.form {
+  width: 60%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-top: 55px;
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-top: 20;
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 20px;
+}
+.form-group input {
+  box-sizing: border-box;
+  display: block;
+  padding: 5px;
+  height: 35px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgb(223, 231, 253);
+}
+.form-group textarea {
+  padding: 5px;
+  border: 1px solid rgb(223, 231, 253);
+  outline: none;
+  display: block;
+  margin-top: 10px;
+  height: 200px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  resize: none;
+}
+.btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  border: 0;
+  border-radius: 10px;
+  color: #ffffff;
+  transition: .3s;
+  background-color: rgba(129, 135, 220);
+}
+.btn:hover {
+  background-color: rgba(117, 123, 200, 1);
+}
+.btn:active {
+  background: transparent;
+  font-weight: 500;
+  color:rgba(117, 123, 200, 1);
+  border: 1.5px solid rgba(117, 123, 200, 1);
+}
+
+@media screen and (max-width: 576px) {
+  .form {
+    width: 100%;
+  }
+}
